@@ -1,0 +1,57 @@
+html, body, .container {
+    height: 100%;
+    min-height: 100%;
+}
+
+.title {
+    color: #005686;
+    margin: 20px 15px 30px 15px;
+    font-size: 18px;    
+}
+
+.content {
+    margin: 30px 5px 20px 5px;
+    color: #77797c;
+}
+
+.container {
+    margin: auto;
+    width: 40%;
+    min-width: 350px;
+    max-width: 500px;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+.button-container {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 85px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.footer {
+    margin: 0 5px;
+    font-style: italic;
+    color: #b4b6ba;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
+
+.banner {
+    height: 200px;
+}

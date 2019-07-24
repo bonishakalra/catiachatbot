@@ -1,0 +1,14 @@
+Dockerfile
+.dockerignore
+docker-deploy.sh
+
+Jenkinsfile
+
+.vscode
+
+node_modules
+
+getGates.sh
+
+README.md
+LICENSE

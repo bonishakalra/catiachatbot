@@ -1,0 +1,19 @@
+.botResponse{
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: lightsteelblue;
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+.botIcon{
+    border-radius: 50% ; border:2px solid black; margin-left: 20px; margin-top: 5px; vertical-align: middle;
+    width: 55px;
+    height: 55px;
+}
+
+.botResponse:hover{
+    background-color :rgb(123, 168, 228);
+}

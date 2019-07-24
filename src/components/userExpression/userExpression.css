@@ -1,0 +1,19 @@
+.userExpression{
+    color: green;
+    border: 2px groove black;
+    border-radius: 15px;
+    background-color: ghostwhite;
+    text-align: right;
+    margin: 5px;
+    padding: 5px;
+}
+
+.userIcon{
+    border-radius: 50% ; border:2px solid black;  margin-right: 20px; margin-top: 5px; vertical-align: middle;
+    width: 35px;
+    height: 35px;
+}
+
+.userExpression:hover{
+    background-color:rgba(224, 224, 243, 0.932);
+}

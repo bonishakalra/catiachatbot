@@ -1,0 +1,84 @@
+data = [
+  {
+    "tag": "Greetings",
+    "patterns": [ "Hi", "Hello", "Is anyone there?", "Good day", "NICE DAY", "GOOD MORNING", "GOOD NIGHT", "HAVE A NICE DAY" ],
+    "responses": [ "Hello, How can i help you ", "Hello, Good to see you, how can i help you ", "Yes 3DBot here", "Hi there, how can I help?", "Have a Nice day", "GOOD MORNING, How can i help you", "Good Night,How can i help you ", "A wonderful day to you too" ]
+  },
+  {
+    "tag": "goodbye",
+    "patterns": [ "Bye", "See you later", "Goodbye", "SEE YA", "CYA", "LATER" ],
+    "responses": [ "See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon.", "Bye, Happy to help", "Good Bye", "OK, Bye" ]
+  },
+  {
+    "tag": "thanks",
+    "patterns": [ "Thanks", "Thank you", "That's helpful" ],
+    "responses": [ "Happy to help!", "Any time!", "My pleasure" ]
+  },
+  {
+    "tag": "CreationCMD",
+    "patterns": [ "create", "insert", "design", "make", "generate" ],
+    "responses": [ "create What ? (Product, 3dPart, 3Dshape) ", "Insert What ? (Product, 3dPart, 3Dshape) " ],
+    "createaction": [ "VPMReference", "3DPart", "3DShape"]
+  },
+  {
+    "tag": "CreateObjects",
+    "patterns": [ "create Product", "create 3DPart", "create 3DShape", "create New" ],
+    "responses": [ "OK Where to create Product? Do you wish to create under root ? YES / NO ", "OK Where to create 3DPart? Do you wish to create under root ? YES / NO", " OK Where to create 3dshape? Do you wish to create under root ? YES / NO" ],
+    "createaction": [ "PLMCmdInsertNewProduct", "PLMCmdInsertNew3DPart", "PLMCmdInsertNew3DShape", "plmnew" ],
+    "confirmaction": [ "creating Product", "creating 3DPart", "creating 3DShape", "creating NEW component" ]
+  },
+  {
+    "tag": "InsertObjects",
+    "patterns": [ "Insert Product","Insert 3dpart","Insert 3dShape", "Insert Drawing","Insert Representation" ],
+    "InputPattern": [ "in", "Under","into","within"],
+    "response": [ "PLMCmdInsertNewProduct", "PLMCmdInsertNew3DPart", "PLMCmdInsertNew3DShape", "PLMCmdInsertNewDrawing", "PLMCmdInsertNewRepresentation" ],
+    "createaction": [ "Inserting" ]
+  },
+  {
+    "tag": "Ansresp",
+    "patterns": [ "YES", "NO" ],
+    "responses": [ "Creating new component under Root", "Please select the Node from tree for creating new component" ]
+  },
+  {
+    "tag": "COMMANDS",
+    "patterns": [ "commands", "menu", "3dcommands", "delete", "cut", "paste", "help" ],
+    "responses": [ "Commands : create, Insert,  copy, delete", "Open help urls " ]
+  },
+  {
+    "tag": "QUESTIONS",
+    "patterns": [ "WHAT IS YOUR NAME", "WHAT'S YOUR NAME", "WHO ARE YOU", "WHAT DO THEY CALL YOU" ],
+    "responses": [ "My name is 3DExperienceBot. You can call me. 3DBot :) " ]
+  },
+  {
+    "tag": "Response",
+    "patterns": [ "OK", "OH NICE", "OK FINE", "good", "HOW ARE YOU" ],
+    "responses": [ "OK", "Did i solve your purpose", "Happy to help", "Good :)", "Yes i am Good, How are You ?" ]
+  },
+  {
+    "tag": "ABOUTBOT",
+    "patterns": [ "WHAT'S UP", "HOW'S IT GOING", "HOW ARE YOU" ],
+    "responses": [ "Everything going good- Work in progress - I am 40 % complete" ]
+  },
+  {
+    "tag": "Operations",
+    "patterns": [ "Open", "COPY", "CUT", "PASTE", "DELETE" ],
+    "responses": [ "Please Enter the object name to " ]
+  },
+  {
+    "tag": "3DObjects",
+    "patterns": [ "Product", "3DPart", "3DShape", "Drawing", "REPRESENTATION", "NEW" ],
+    "responses": [ "Product", "3DPart", "3DShape", "Drawing", "REPRESENTATION", "NEW" ],
+    "createaction": [ "VPMReference", "VPMRepReference", "PLMCmdInsertNew3DShape", "PLMCmdInsertNewDrawing", "PLMNEW" ],
+	"tips":["A product is an object representing a physical part or assembly.", "A 3D part is an object consisting of a product and a 3D part representation."]
+  },
+  {
+    "tag": "Selection",
+    "patterns": [ "select", "highlight" ]
+  },
+     {
+    "tag": "help",
+    "patterns": [ "How to create product", "How to create 3dPart","How to create publication", "How to create new content" ,"instruction" ],
+    "responses": [ "http://dsdoc/install421HF/English/VpeUserMap/vpe-t-Create-Product-New.htm", "http://dsdoc/install421HF/English/VpeUserMap/vpe-t-3DPartCreate.htm", "http://dsdoc/install421HF/English/VpeUserMap/vpe-c-Publication.htm", "http://dsdoc/install421HF/English/EXP3DBasicsUserMap/exp3dbasics-t-ObjectCreate-NewObject.htm#exp3dbasics-t-ObjectCreate-NewObject","hmmmm<br/>here is step by step guide<br/> or Let me help you.<br/>You can type create Product"],
+  "comments":["Help document to "]
+  }
+];

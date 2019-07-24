@@ -1,0 +1,17 @@
+.chatWindow{
+    text-align:left; 
+    position:fixed; 
+    display:block; 
+    top:3vh; 
+    width:90vw; 
+    margin-left:1%; 
+    margin-right:2.25%; 
+    height:65vh; 
+    resize:none; 
+    font-family:Courier; 
+    overflow-y:auto; 
+    user-select:none; 
+    font-size:3vw;
+    border: 2px solid black;
+    border-radius: 15px;
+}

@@ -1,0 +1,18 @@
+.mydataTable{
+    width:98%;
+       border-collapse: collapse;
+       margin:5px;
+       padding: 10px;
+       margin-left: 20px; margin-top: 5px;
+       table-layout: auto;
+   }
+   td:hover {background-color:#f5f5f5;  border: 2px solid black;}
+   
+   table, td, th {
+       border: 2px  solid black;
+       font-size: 25px;
+     }
+   
+     th{background-color:#06134e;  color: rgb(244, 244, 250);}
+   
+     td{background-color:#ffffff;}
